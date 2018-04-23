@@ -18,7 +18,7 @@ services:
     volumes:
       - ".:/var/www/html/wp-content/plugins/my-plugin"
   mysql:
-    image: "mariadb:10.2"
+    image: "mariadb:latest"
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: "wordpress"
