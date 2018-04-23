@@ -2,7 +2,7 @@ version: "2"
 
 services:
   wordpress:
-    image: "chriszarate/wordpress:4.9.1"
+    build: "https://github.com/saschalalala/docker-wordpress"
     environment:
       VIRTUAL_HOST: "${DOCKER_DEV_DOMAIN}"
       WORDPRESS_ACTIVATE_PLUGINS: "my-plugin" # plugin folder relative to /wp-content/plugins/
